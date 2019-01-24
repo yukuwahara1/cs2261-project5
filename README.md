@@ -1,13 +1,15 @@
 # cs2261-project5
 Encrypting and decrypting a file
 
-The project 5 was assigned to encrypt a file and read the encrypted 
+ The project 5 was assigned to encrypt a file and read the encrypted 
 file. Assuming there is a file called "plaintext" containing a super secret
 message,
 
+---------------------------------------------------------------------------
   Yu Kuwahara is actually a bunny person!
+---------------------------------------------------------------------------
 
-then the program promps the user to enter a key that is a byte between -128 
+ then the program promps the user to enter a key that is a byte between -128 
 and 127. Next, the program asks the file name, in this case it is "plaintext".
 Now, the program encrypts the content of the file by reading the contents as
 an array of bytes instead of reading them letter by letter as string. 
