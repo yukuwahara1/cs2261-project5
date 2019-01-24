@@ -5,7 +5,7 @@ Encrypting and decrypting a file
 file. Assuming there is a file called "plaintext" containing a super secret
 message,
 
-  Yu Kuwahara is actually a bunny person!
+	Yu Kuwahara is actually a bunny person!
   
  then the program promps the user to enter a key that is a byte between -128 
 and 127. Next, the program asks the file name, in this case it is "plaintext".
@@ -15,7 +15,7 @@ Exception handlings such as IO error were done at the end. The encrypted file
 should be able to find in the same folder as the program. The encrypted content
 is,
 
-  ]y$Oy{eleve$mw$egxyepp}$e$fyrr}$tivwsr%
+	]y$Oy{eleve$mw$egxyepp}$e$fyrr}$tivwsr%
 
 Again as you can see, those white spaces were proerly take care of.
 
@@ -25,8 +25,8 @@ First, it reads the content of the file as an array of bytes. Then the program
 subtracts the key to each of the elements in the array and convert the outcome
 into bytes. Now I got,
 
-  Yu Kuwahara is actually a bunny person!
-
+	Yu Kuwahara is actually a bunny person!
+  
 The hardest part was coming up with a way to encrypt a file other than 
 read the whole content as string and break them down into pieces like how I did
 in C++. Doing online researches and one of the requirements for the project, 
@@ -42,6 +42,8 @@ if so it should be end with .txt or if it is decrypted, if so find out what key 
 used by matching the content of the encrypted file with the content of the decrypted 
 file modified with key from -128 to 127 by using BufferedReader and FileReader to check if each of 
 the lines in both of the files are the same.
+ 
+
 
 
 
